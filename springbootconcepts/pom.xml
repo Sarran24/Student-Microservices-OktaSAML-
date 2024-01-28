@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.0.2</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<packaging>pom</packaging>
+	<artifactId>springbootconcepts</artifactId>
+	<name>springbootconcepts</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>17</java.version>
+		<spring-cloud-azure.version>5.0.0</spring-cloud-azure.version>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>samlOkta</module>
+		<module>oktaSSO</module>
+		<module>zuulGateway</module>
+		<module>Aspectj</module>
+		<module>feignClient</module>
+		<module>ServiceRegistry</module>
+		<module>GatewayAPI</module>
+		<module>BasicSecurityAuthentication</module>
+		<module>springSecurityJwt</module>
+		<module>UserService</module>
+		<module>HotelService</module>
+		<module>LoggingConcept</module>
+		<module>RatingService</module>
+		<module>ApplicationPropertiesOverride</module>
+		<module>StorageService</module>
+		<module>Test</module>
+	</modules>
+</project>
